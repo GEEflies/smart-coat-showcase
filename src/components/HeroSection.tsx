@@ -96,7 +96,7 @@ const HeroSection = () => {
               {/* Glass Card with Image */}
               <div className="glass-strong rounded-3xl p-8 magnetic">
                 <img 
-                  src="/user/documents/upload/lakovacia-linka-s-dopravnikovym-systemom-nitra.jpg"
+                  src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovacia-linka-s-dopravnikovym-systemom-nitra.jpg"
                   alt="Moderná lakovacia linka s dopravníkovým systémom vo výrobe"
                   className="w-full h-96 object-cover rounded-2xl"
                 />

@@ -19,7 +19,7 @@ const processSteps = [
     icon: Droplets,
     title: 'Predúprava povrchu',
     description: 'Odmasťovanie, čistenie a chemická úprava povrchu pre dokonalú adhéziu náteru.',
-    image: '/user/documents/upload/ocistenie-kovoveho-zabradlia-pred-lakovanim-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/ocistenie-kovoveho-zabradlia-pred-lakovanim-nitra.jpg',
     duration: '30-60 min',
     temperature: '40-60°C',
     details: ['Alkalické čistenie', 'Odstraňovanie hrdze', 'Fosfátovanie', 'Konečné oplachovanie']
@@ -29,7 +29,7 @@ const processSteps = [
     icon: SprayCanIcon,
     title: 'Aplikácia prášku',
     description: 'Elektrostatické nanášanie práškového laku v kontrolovanom prostredí pre rovnomerné pokrytie.',
-    image: '/user/documents/upload/praskove-lakovanie-ocelovej-konstrukcie-v-peci-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/praskove-lakovanie-ocelovej-konstrukcie-v-peci-nitra.jpg',
     duration: '15-30 min',
     temperature: '20-25°C',
     details: ['Elektrostatický náboj', 'Rovnomerné nanášanie', 'Kontrola hrúbky', 'Kvalitná kontrola']
@@ -39,7 +39,7 @@ const processSteps = [
     icon: Flame,
     title: 'Vypaľovanie',
     description: 'Tepelné spracovanie v priemyselnej peci pre vytvorenie tvrdého a odolného povrchu.',
-    image: '/user/documents/upload/priemyselna-susiaca-pec-so-zelenym-ramom-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/priemyselna-susiaca-pec-so-zelenym-ramom-nitra.jpg',
     duration: '20-40 min',
     temperature: '160-200°C',
     details: ['Presná teplota', 'Kontrolovaný čas', 'Rovnomerné vypaľovanie', 'Chladenie']
@@ -49,7 +49,7 @@ const processSteps = [
     icon: CheckCircle,
     title: 'Kontrola kvality',
     description: 'Finálna kontrola kvality, testovanie adhézie a príprava na expedíciu.',
-    image: '/user/documents/upload/biela-praskova-povrchova-uprava-zabradlia-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/biela-praskova-povrchova-uprava-zabradlia-nitra.jpg',
     duration: '10-15 min',
     temperature: 'Izbová',
     details: ['Vizuálna kontrola', 'Test adhézie', 'Meranie hrúbky', 'Finálne balenie']
