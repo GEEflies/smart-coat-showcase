@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Ultra-Modern Powder Coating Design System - Billik
 All colors MUST be HSL.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 @layer base {
   :root {
+    /* Brand Colors - Billik Teal Theme */
+    --primary: 174 100% 29%;  /* #009688 */
+    --primary-light: 174 51% 60%;  /* #2db9a7 */
+    --primary-dark: 174 100% 20%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Modern Backgrounds */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --background-secondary: 174 25% 97%; /* #EAF4F3 */
+    --background-tertiary: 220 14% 98%; /* #f9fafb */
+    --foreground: 222 84% 5%;
+    
+    /* Glass Morphism */
+    --glass-bg: 174 100% 29% / 0.1;
+    --glass-border: 174 100% 29% / 0.2;
+    --glass-shadow: 174 100% 29% / 0.1;
+    
+    /* Cards & Surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 222 84% 5%;
+    --card-shadow: 174 100% 29% / 0.08;
+    
+    /* Interactive Elements */
+    --accent: 174 100% 35%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    /* Modern Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 100% 29%), hsl(174 51% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(174 25% 97%), hsl(220 14% 98%));
+    --gradient-glass: linear-gradient(135deg, hsl(174 100% 29% / 0.1), hsl(174 51% 60% / 0.05));
+    --gradient-hero: linear-gradient(135deg, hsl(174 100% 29%), hsl(174 51% 60%), hsl(200 100% 50%));
+    
+    /* Animations & Shadows */
+    --shadow-soft: 0 4px 20px hsl(174 100% 29% / 0.1);
+    --shadow-medium: 0 8px 40px hsl(174 100% 29% / 0.15);
+    --shadow-strong: 0 20px 60px hsl(174 100% 29% / 0.2);
+    --shadow-glow: 0 0 40px hsl(174 100% 29% / 0.3);
+    
+    /* Borders & Inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 174 100% 29%;
+    
+    /* System Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Design Tokens */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +127,204 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins antialiased;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Ultra-Modern Components & Effects */
+@layer components {
+  /* Glass Morphism Effects */
+  .glass {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: 0 8px 32px hsl(var(--glass-shadow));
+  }
+  
+  .glass-strong {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(40px) saturate(1.5);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Modern Gradients */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Floating Elements */
+  .float-element {
+    transform: translateY(0);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  /* Magnetic Hover Effects */
+  .magnetic {
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .magnetic:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-strong);
+  }
+
+  /* Modern Buttons */
+  .btn-modern {
+    @apply relative overflow-hidden rounded-xl px-8 py-4 font-medium;
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    border: none;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .btn-modern:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .btn-modern:hover:before {
+    left: 100%;
+  }
+
+  /* Card Effects */
+  .card-modern {
+    @apply relative rounded-2xl p-8;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border) / 0.1);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card-modern:hover {
+    transform: translateY(-8px) rotateX(5deg);
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Animated Underline */
+  .link-animated {
+    @apply relative;
+  }
+  
+  .link-animated:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .link-animated:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+/* Ultra-Modern Animations */
+@layer utilities {
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.6s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 0.7s ease-out;
+  }
+  
+  /* Stagger animations */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  
+  /* Parallax utilities */
+  .parallax-slow { transform: translateY(var(--scroll-y, 0px)); }
+  .parallax-medium { transform: translateY(calc(var(--scroll-y, 0px) * 0.5)); }
+  .parallax-fast { transform: translateY(calc(var(--scroll-y, 0px) * 0.3)); }
 }
