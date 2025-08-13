@@ -20,7 +20,7 @@ const services = [
     icon: Factory,
     title: 'Priemyselné lakovanie',
     description: 'Špecializujeme sa na lakovanie ťažkých strojov, výrobných liniek a priemyselných zariadení s maximálnou odolnosťou.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/povrchova-uprava-priemyselnych-kovovych-dielov-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/praskove-lakovanie-ocelovej-konstrukcie-v-peci-nitra.jpg',
     features: ['Vysoká odolnosť', 'Anti-korózia', 'Dlhá životnosť'],
     price: 'Od 15€/m²',
     rating: 4.9
@@ -40,7 +40,7 @@ const services = [
     icon: Building,
     title: 'Architektonické prvky',
     description: 'Lakovanie zábradlí, brán, plotov a architektonických konštrukcií s dôrazom na estetiku a funkčnosť.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/ochranne-lakovanie-kovovej-brany-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/biela-praskova-povrchova-uprava-zabradlia-nitra.jpg',
     features: ['Vonkajšia odolnosť', 'UV ochrana', 'Estetický vzhľad'],
     price: 'Od 12€/m²',
     rating: 4.9
@@ -50,7 +50,7 @@ const services = [
     icon: Palette,
     title: 'Vlastné farby RAL',
     description: 'Široká paleta RAL farieb a možnosť vytvorenia vlastných farebných odtieňov podľa vašich požiadaviek.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/ochranna-povrchova-uprava-kovovych-dielov-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/cervene-praskove-lakovanie-kovovych-dielov-nitra.jpg',
     features: ['500+ RAL farieb', 'Vlastné odtiene', 'Farebné vzorky'],
     price: 'Individuálne',
     rating: 5.0
