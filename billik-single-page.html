@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billik - Revolučné práškové lakovanie kovov | Nitra</title>
+    <meta name="description" content="Špičkové práškové lakovanie kovov v Nitre. 10+ rokov skúseností, 99.8% spokojnosť zákazníkov, ekologické procesy. Priemyselné, architektonické a dizajnové lakovanie." />
+    <meta name="author" content="Billik" />
+    <meta name="keywords" content="práškové lakovanie, kovové konštrukcie, zábradlia, priemyselné lakovanie, Nitra, Slovensko" />
+
+    <meta property="og:title" content="Billik - Revolučné práškové lakovanie kovov | Nitra" />
+    <meta property="og:description" content="Špičkové práškové lakovanie kovov v Nitre. 10+ rokov skúseností, 99.8% spokojnosť zákazníkov, ekologické procesy." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            /* Brand Colors */
+            --primary: 220 90% 56%;
+            --primary-light: 220 90% 70%;
+            --primary-dark: 220 90% 45%;
+            --primary-foreground: 0 0% 100%;
+            
+            /* Glass Morphism */
+            --glass-bg: 255 255 255 / 0.1;
+            --glass-border: 255 255 255 / 0.2;
+            --glass-shadow: 0 0 0 / 0.3;
+            
+            /* Cards & Surfaces */
+            --card: 220 20% 98%;
+            --card-foreground: 220 15% 15%;
+            --card-shadow: 220 20% 85%;
+            
+            /* Background Colors */
+            --background: 220 25% 97%;
+            --background-secondary: 220 20% 94%;
+            --background-tertiary: 220 15% 91%;
+            --foreground: 220 15% 15%;
+            
+            /* UI Elements */
+            --border: 220 20% 85%;
+            --input: 220 20% 90%;
+            --ring: 220 90% 56%;
+            
+            /* Semantic Colors */
+            --secondary: 220 10% 90%;
+            --secondary-foreground: 220 15% 25%;
+            --muted: 220 10% 95%;
+            --muted-foreground: 220 15% 45%;
+            --accent: 220 15% 92%;
+            --accent-foreground: 220 15% 20%;
+            --destructive: 0 85% 60%;
+            --destructive-foreground: 0 0% 100%;
+            --popover: 220 20% 98%;
+            --popover-foreground: 220 15% 15%;
+            
+            /* Shadows */
+            --shadow-soft: 0 2px 8px hsl(220 20% 85% / 0.3);
+            --shadow-medium: 0 4px 16px hsl(220 20% 75% / 0.4);
+            --shadow-strong: 0 8px 32px hsl(220 20% 65% / 0.5);
+            --shadow-glow: 0 0 20px hsl(var(--primary) / 0.3);
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+            --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+            --gradient-glass: linear-gradient(135deg, hsl(var(--glass-bg)), hsl(255 255 255 / 0.05));
+            --gradient-hero: linear-gradient(135deg, hsl(220 25% 97%), hsl(220 20% 94%));
+            
+            /* Border Radius */
+            --radius: 0.75rem;
+        }
+
+        /* Dark mode */
+        .dark {
+            --primary: 220 90% 65%;
+            --primary-light: 220 90% 80%;
+            --primary-dark: 220 90% 50%;
+            --primary-foreground: 220 15% 15%;
+            
+            --glass-bg: 0 0 0 / 0.1;
+            --glass-border: 255 255 255 / 0.1;
+            --glass-shadow: 0 0 0 / 0.5;
+            
+            --card: 220 15% 8%;
+            --card-foreground: 220 10% 95%;
+            --card-shadow: 220 15% 5%;
+            
+            --background: 220 15% 6%;
+            --background-secondary: 220 15% 9%;
+            --background-tertiary: 220 15% 12%;
+            --foreground: 220 10% 95%;
+            
+            --border: 220 15% 18%;
+            --input: 220 15% 15%;
+            --ring: 220 90% 65%;
+            
+            --secondary: 220 15% 12%;
+            --secondary-foreground: 220 10% 85%;
+            --muted: 220 15% 10%;
+            --muted-foreground: 220 10% 65%;
+            --accent: 220 15% 15%;
+            --accent-foreground: 220 10% 90%;
+            --destructive: 0 85% 65%;
+            --destructive-foreground: 0 0% 100%;
+            --popover: 220 15% 8%;
+            --popover-foreground: 220 10% 95%;
+        }
+
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: hsl(var(--background));
+            color: hsl(var(--foreground));
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .inset-0 {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .h-full {
+            height: 100%;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        .gap-8 {
+            gap: 2rem;
+        }
+
+        .gap-12 {
+            gap: 3rem;
+        }
+
+        .gap-16 {
+            gap: 4rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .py-20 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .mt-12 {
+            margin-top: 3rem;
+        }
+
+        /* Typography */
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        .text-base {
+            font-size: 1rem;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+        }
+
+        .text-5xl {
+            font-size: 3rem;
+        }
+
+        .text-6xl {
+            font-size: 3.75rem;
+        }
+
+        .font-light {
+            font-weight: 300;
+        }
+
+        .font-normal {
+            font-weight: 400;
+        }
+
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .leading-tight {
+            line-height: 1.25;
+        }
+
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+
+        /* Colors */
+        .text-primary {
+            color: hsl(var(--primary));
+        }
+
+        .text-secondary {
+            color: hsl(var(--secondary-foreground));
+        }
+
+        .text-muted {
+            color: hsl(var(--muted-foreground));
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .bg-primary {
+            background-color: hsl(var(--primary));
+        }
+
+        .bg-secondary {
+            background-color: hsl(var(--secondary));
+        }
+
+        .bg-card {
+            background-color: hsl(var(--card));
+        }
+
+        .bg-muted {
+            background-color: hsl(var(--muted));
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+
+        /* Borders */
+        .border {
+            border: 1px solid hsl(var(--border));
+        }
+
+        .border-primary {
+            border-color: hsl(var(--primary));
+        }
+
+        .rounded {
+            border-radius: 0.25rem;
+        }
+
+        .rounded-md {
+            border-radius: 0.375rem;
+        }
+
+        .rounded-lg {
+            border-radius: var(--radius);
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        /* Shadows */
+        .shadow {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .shadow-soft {
+            box-shadow: var(--shadow-soft);
+        }
+
+        .shadow-medium {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .shadow-strong {
+            box-shadow: var(--shadow-strong);
+        }
+
+        /* Responsive Grid */
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        /* Transitions */
+        .transition {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .hover\:bg-primary:hover {
+            background-color: hsl(var(--primary));
+        }
+
+        .hover\:text-white:hover {
+            color: white;
+        }
+
+        .hover\:scale-105:hover {
+            transform: scale(1.05);
+        }
+
+        .hover\:shadow-lg:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Glass Morphism Effects */
+        .glass {
+            background: hsl(var(--glass-bg));
+            backdrop-filter: blur(20px);
+            border: 1px solid hsl(var(--glass-border));
+            box-shadow: 0 8px 32px hsl(var(--glass-shadow));
+        }
+
+        .glass-strong {
+            background: hsl(255 255 255 / 0.15);
+            backdrop-filter: blur(30px);
+            border: 1px solid hsl(255 255 255 / 0.3);
+            box-shadow: 0 12px 40px hsl(0 0 0 / 0.4);
+        }
+
+        /* Gradients */
+        .gradient-primary {
+            background: var(--gradient-primary);
+        }
+
+        .gradient-secondary {
+            background: var(--gradient-secondary);
+        }
+
+        .gradient-hero {
+            background: var(--gradient-hero);
+        }
+
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Modern Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-strong);
+        }
+
+        .btn-secondary {
+            background: hsl(var(--secondary));
+            color: hsl(var(--secondary-foreground));
+            border: 1px solid hsl(var(--border));
+        }
+
+        .btn-secondary:hover {
+            background: hsl(var(--accent));
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: hsl(var(--primary));
+            border: 1px solid hsl(var(--primary));
+        }
+
+        .btn-outline:hover {
+            background: hsl(var(--primary));
+            color: white;
+        }
+
+        /* Card Styles */
+        .card {
+            background: hsl(var(--card));
+            color: hsl(var(--card-foreground));
+            border-radius: var(--radius);
+            border: 1px solid hsl(var(--border));
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .card-modern {
+            background: hsl(var(--card));
+            border-radius: 1rem;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid hsl(var(--border));
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .card-modern:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-strong);
+        }
+
+        /* Animations */
+        @keyframes gradient-shift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scale-in {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slide-in-right {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in-up 0.6s ease-out;
+        }
+
+        .animate-scale-in {
+            animation: scale-in 0.5s ease-out;
+        }
+
+        .animate-slide-in-right {
+            animation: slide-in-right 0.6s ease-out;
+        }
+
+        /* Stagger animations */
+        .stagger-1 {
+            animation-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            animation-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            animation-delay: 0.3s;
+        }
+
+        .stagger-4 {
+            animation-delay: 0.4s;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 640px) {
+            .sm\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .sm\:text-lg {
+                font-size: 1.125rem;
+            }
+            .sm\:text-xl {
+                font-size: 1.25rem;
+            }
+            .sm\:text-2xl {
+                font-size: 1.5rem;
+            }
+            .sm\:text-3xl {
+                font-size: 1.875rem;
+            }
+            .sm\:text-4xl {
+                font-size: 2.25rem;
+            }
+            .sm\:text-5xl {
+                font-size: 3rem;
+            }
+            .sm\:text-6xl {
+                font-size: 3.75rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .md\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+            .md\:flex-row {
+                flex-direction: row;
+            }
+            .md\:text-left {
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+            .lg\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        /* Form Styles */
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid hsl(var(--border));
+            border-radius: var(--radius);
+            background: hsl(var(--background));
+            color: hsl(var(--foreground));
+            font-size: 0.875rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: hsl(var(--primary));
+            box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+
+        /* Badge Styles */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            border: 1px solid transparent;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .badge-primary {
+            background: hsl(var(--primary));
+            color: white;
+        }
+
+        .badge-secondary {
+            background: hsl(var(--secondary));
+            color: hsl(var(--secondary-foreground));
+        }
+
+        .badge-outline {
+            background: transparent;
+            color: hsl(var(--foreground));
+            border-color: hsl(var(--border));
+        }
+
+        /* Hero Section Specific Styles */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-hero);
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-strong);
+        }
+
+        /* Stats Counter */
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: hsl(var(--primary));
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: hsl(var(--muted-foreground));
+            margin-top: 0.25rem;
+        }
+
+        /* Process Timeline */
+        .process-timeline {
+            position: relative;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: hsl(var(--border));
+            transform: translateX(-50%);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .process-step-indicator {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3rem;
+            height: 3rem;
+            background: hsl(var(--primary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .process-step-content {
+            background: hsl(var(--card));
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+            margin-left: 4rem;
+        }
+
+        .process-step:nth-child(even) .process-step-content {
+            margin-left: 0;
+            margin-right: 4rem;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-strong);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.05);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: hsl(var(--card));
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        /* Rating Stars */
+        .rating {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .star {
+            width: 1rem;
+            height: 1rem;
+            fill: currentColor;
+        }
+
+        .star-filled {
+            color: #fbbf24;
+        }
+
+        .star-empty {
+            color: #d1d5db;
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: hsl(var(--card));
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid hsl(var(--border));
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .service-card.active {
+            border-color: hsl(var(--primary));
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-4px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* Icon styles */
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor;
+        }
+
+        .icon-lg {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .icon-xl {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        /* Loading states */
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .spinner {
+            border: 2px solid hsl(var(--border));
+            border-top: 2px solid hsl(var(--primary));
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Success message */
+        .success-message {
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+            border-radius: var(--radius);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Filter buttons */
+        .filter-button {
+            padding: 0.5rem 1rem;
+            border: 1px solid hsl(var(--border));
+            background: hsl(var(--background));
+            color: hsl(var(--foreground));
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .filter-button.active {
+            background: hsl(var(--primary));
+            color: white;
+            border-color: hsl(var(--primary));
+        }
+
+        .filter-button:hover {
+            background: hsl(var(--accent));
+        }
+
+        /* Image aspect ratios */
+        .aspect-video {
+            aspect-ratio: 16 / 9;
+        }
+
+        .aspect-square {
+            aspect-ratio: 1 / 1;
+        }
+
+        .aspect-4-3 {
+            aspect-ratio: 4 / 3;
+        }
+
+        /* Object fit */
+        .object-cover {
+            object-fit: cover;
+        }
+
+        .object-contain {
+            object-fit: contain;
+        }
+
+        /* Visibility utilities */
+        .visible {
+            visibility: visible;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        .opacity-50 {
+            opacity: 0.5;
+        }
+
+        .opacity-100 {
+            opacity: 1;
+        }
+
+        /* Z-index utilities */
+        .z-10 {
+            z-index: 10;
+        }
+
+        .z-20 {
+            z-index: 20;
+        }
+
+        .z-30 {
+            z-index: 30;
+        }
+
+        .z-40 {
+            z-index: 40;
+        }
+
+        .z-50 {
+            z-index: 50;
+        }
+
+        /* Transform utilities */
+        .transform {
+            transform: var(--tw-transform);
+        }
+
+        .scale-105 {
+            transform: scale(1.05);
+        }
+
+        .scale-110 {
+            transform: scale(1.1);
+        }
+
+        .-translate-y-1 {
+            transform: translateY(-0.25rem);
+        }
+
+        .-translate-y-2 {
+            transform: translateY(-0.5rem);
+        }
+
+        /* Overflow utilities */
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        /* Cursor utilities */
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-not-allowed {
+            cursor: not-allowed;
+        }
+
+        /* User select utilities */
+        .select-none {
+            user-select: none;
+        }
+
+        /* Pointer events utilities */
+        .pointer-events-none {
+            pointer-events: none;
+        }
+
+        .pointer-events-auto {
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="hero-content animate-fade-in-up">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-gradient">
+                        Revolučné práškové lakovanie kovov
+                    </h1>
+                    <p class="text-lg sm:text-xl text-muted mb-8 leading-relaxed">
+                        Špičkové práškové lakovanie v Nitre s 10+ rokmi skúseností. 
+                        Ekologické procesy, dokonalá kvalita a 99.8% spokojnosť zákazníkov.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="#contact" class="btn btn-primary px-8 py-4 text-lg">
+                            Nezáväzná kalkulácia
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline px-8 py-4 text-lg">
+                            Naše projekty
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="stat-item animate-scale-in stagger-1">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">rokov skúseností</span>
+                        </div>
+                        <div class="stat-item animate-scale-in stagger-2">
+                            <span class="stat-number" data-count="998">0</span>
+                            <span class="stat-label">% spokojnosť</span>
+                        </div>
+                        <div class="stat-item animate-scale-in stagger-3">
+                            <span class="stat-number" data-count="5000">0</span>
+                            <span class="stat-label">+ projektov</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-slide-in-right">
+                    <div class="card-modern p-0">
+                        <img 
+                            src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/praskove-lakovanie-kovoveho-dielu-nitra.jpg" 
+                            alt="Práškové lakovanie v akcii" 
+                            class="hero-image"
+                        />
+                        <div class="glass absolute top-4 right-4 p-4 rounded-lg">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                <span class="text-sm font-medium text-white">Práve lakujeme</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#services" class="text-primary">
+                <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-background-secondary" id="services">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gradient">
+                    Naše služby
+                </h2>
+                <p class="text-lg text-muted max-w-3xl mx-auto">
+                    Ponúkame komplexné riešenia práškového lakovania pre všetky typy kovových konštrukcií
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="service-card" onclick="setActiveService(0)">
+                    <div class="mb-4">
+                        <svg class="icon-xl text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.78 0-2.678-2.153-1.415-3.414l5-5A2 2 0 009 9.172V5L8 4z"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Priemyselné lakovanie</h3>
+                        <p class="text-muted mb-4">Vysokoodolné povlaky pre priemyselné aplikácie</p>
+                        <img 
+                            src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/praskove-lakovanie-velkej-kovovej-konstrukcie-nitra.jpg" 
+                            alt="Priemyselné lakovanie" 
+                            class="w-full h-48 object-cover rounded-lg mb-4"
+                        />
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold">Od €50/m²</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm ml-1">4.9</span>
+                            </div>
+                        </div>
+                        <ul class="text-sm text-muted space-y-1">
+                            <li>• Vysoká odolnosť proti korózii</li>
+                            <li>• Certifikované procesy</li>
+                            <li>• Dlhodobá záruka</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="setActiveService(1)">
+                    <div class="mb-4">
+                        <svg class="icon-xl text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Nábytok a interiér</h3>
+                        <p class="text-muted mb-4">Estetické riešenia pre interiérové použitie</p>
+                        <img 
+                            src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/detail-praskoveho-nateru-disku-nitra.jpg" 
+                            alt="Nábytok a interiér" 
+                            class="w-full h-48 object-cover rounded-lg mb-4"
+                        />
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold">Od €35/m²</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm ml-1">4.8</span>
+                            </div>
+                        </div>
+                        <ul class="text-sm text-muted space-y-1">
+                            <li>• Široká paleta farieb</li>
+                            <li>• Hladký povrch</li>
+                            <li>• Bezpečné pre interiér</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="setActiveService(2)">
+                    <div class="mb-4">
+                        <svg class="icon-xl text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Zábradlia a ploty</h3>
+                        <p class="text-muted mb-4">Ochranné a dekoratívne prvky exteriéru</p>
+                        <img 
+                            src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-premenovane/praskove-lakovanie-zabradlia-v-kabine-nitra.jpg" 
+                            alt="Zábradlia a ploty" 
+                            class="w-full h-48 object-cover rounded-lg mb-4"
+                        />
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-semibold">Od €40/m²</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm ml-1">4.9</span>
+                            </div>
+                        </div>
+                        <ul class="text-sm text-muted space-y-1">
+                            <li>• Odolnosť voči poveternostným vplyvom</li>
+                            <li>• Antikorózna ochrana</li>
+                            <li>• Dlhodobá stálosť farieb</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card text-center p-6">
+                    <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                    <h3 class="text-lg font-semibold mb-2">Ekologické</h3>
+                    <p class="text-muted">Bezpečné pre životné prostredie a zdravie</p>
+                </div>
+                <div class="card text-center p-6">
+                    <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <h3 class="text-lg font-semibold mb-2">Rýchle dodanie</h3>
+                    <p class="text-muted">Štandardne do 5 pracovných dní</p>
+                </div>
+                <div class="card text-center p-6">
+                    <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3 class="text-lg font-semibold mb-2">Záruka kvality</h3>
+                    <p class="text-muted">5-ročná záruka na všetky naše práce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20" id="process">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gradient">
+                    Náš proces
+                </h2>
+                <p class="text-lg text-muted max-w-3xl mx-auto">
+                    Každý krok je dôležitý pre dosiahnutie dokonalého výsledku
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-step-indicator">1</div>
+                    <div class="process-step-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Čistenie a predúprava</h3>
+                                <p class="text-muted mb-4">
+                                    Dôkladné odmasťovanie a mechanické čistenie povrchu pre optimálnu adhéziu
+                                </p>
+                                <div class="flex items-center gap-4 mb-2">
+                                    <span class="badge badge-secondary">Trvanie: 2-4 hodiny</span>
+                                    <span class="badge badge-outline">Teplota: 60°C</span>
+                                </div>
+                                <ul class="text-sm text-muted space-y-1">
+                                    <li>• Chemické odmasťovanie</li>
+                                    <li>• Mechanické čistenie</li>
+                                    <li>• Fosfátová predúprava</li>
+                                    <li>• Kontrola kvality povrchu</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img 
+                                    src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-premenovane/ocistenie-kovoveho-zabradlia-pred-lakovanim-nitra.jpg" 
+                                    alt="Čistenie a predúprava" 
+                                    class="w-full rounded-lg shadow-medium"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-indicator">2</div>
+                    <div class="process-step-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="md:order-2">
+                                <h3 class="text-2xl font-bold mb-4">Aplikácia práškového náteru</h3>
+                                <p class="text-muted mb-4">
+                                    Elektrostatické nanesenie práškového náteru v kontrolovanom prostredí
+                                </p>
+                                <div class="flex items-center gap-4 mb-2">
+                                    <span class="badge badge-secondary">Trvanie: 1-2 hodiny</span>
+                                    <span class="badge badge-outline">Teplota: 20°C</span>
+                                </div>
+                                <ul class="text-sm text-muted space-y-1">
+                                    <li>• Elektrostatická aplikácia</li>
+                                    <li>• Rovnomerné pokrytie</li>
+                                    <li>• Kontrola hrúbky vrstvy</li>
+                                    <li>• Filtrácia a recyklácia</li>
+                                </ul>
+                            </div>
+                            <div class="md:order-1">
+                                <img 
+                                    src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/aplikacia-tyrkysoveho-praskoveho-nateru-na-panel-nitra.jpg" 
+                                    alt="Aplikácia práškového náteru" 
+                                    class="w-full rounded-lg shadow-medium"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-indicator">3</div>
+                    <div class="process-step-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Vypaľovanie v peci</h3>
+                                <p class="text-muted mb-4">
+                                    Tepelné spracovanie pre vytvorenie tvrdého a odolného povlaku
+                                </p>
+                                <div class="flex items-center gap-4 mb-2">
+                                    <span class="badge badge-secondary">Trvanie: 15-20 minút</span>
+                                    <span class="badge badge-outline">Teplota: 180-200°C</span>
+                                </div>
+                                <ul class="text-sm text-muted space-y-1">
+                                    <li>• Presná teplotná kontrola</li>
+                                    <li>• Optimálny čas vypaľovania</li>
+                                    <li>• Rovnomerné prehrievanie</li>
+                                    <li>• Automatické riadenie procesu</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img 
+                                    src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/kontrola-priemyselnej-vypalovacej-peci-nitra.jpg" 
+                                    alt="Vypaľovanie v peci" 
+                                    class="w-full rounded-lg shadow-medium"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-indicator">4</div>
+                    <div class="process-step-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="md:order-2">
+                                <h3 class="text-2xl font-bold mb-4">Kontrola kvality</h3>
+                                <p class="text-muted mb-4">
+                                    Finálna kontrola a balenie pre bezpečný transport
+                                </p>
+                                <div class="flex items-center gap-4 mb-2">
+                                    <span class="badge badge-secondary">Trvanie: 30 minút</span>
+                                    <span class="badge badge-outline">Teplota: 20°C</span>
+                                </div>
+                                <ul class="text-sm text-muted space-y-1">
+                                    <li>• Vizuálna kontrola povrchu</li>
+                                    <li>• Meranie hrúbky povlaku</li>
+                                    <li>• Test priľnavosti</li>
+                                    <li>• Ochranné balenie</li>
+                                </ul>
+                            </div>
+                            <div class="md:order-1">
+                                <img 
+                                    src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-premenovane/zabradlie-po-praskovom-lakovani-nitra.jpg" 
+                                    alt="Kontrola kvality" 
+                                    class="w-full rounded-lg shadow-medium"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
+                    <button class="btn btn-primary" onclick="showProcessVideo()">
+                        <svg class="icon mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Pozrieť video
+                    </button>
+                    <button class="btn btn-outline" onclick="downloadBrochure()">
+                        <svg class="icon mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Stiahnuť brožúru
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 bg-background-secondary" id="portfolio">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gradient">
+                    Naše projekty
+                </h2>
+                <p class="text-lg text-muted max-w-3xl mx-auto">
+                    Pozrite si ukážky našich najúspešnejších projektov práškového lakovania
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-button active" onclick="filterPortfolio('všetky')" data-category="všetky">
+                    Všetky projekty
+                </button>
+                <button class="filter-button" onclick="filterPortfolio('priemyselné')" data-category="priemyselné">
+                    Priemyselné
+                </button>
+                <button class="filter-button" onclick="filterPortfolio('architektonické')" data-category="architektonické">
+                    Architektonické
+                </button>
+                <button class="filter-button" onclick="filterPortfolio('dizajnové')" data-category="dizajnové">
+                    Dizajnové
+                </button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <div class="portfolio-item" data-category="priemyselné">
+                    <img 
+                        src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/kovova-konstrukcia-so-sivym-praskovym-naterom-nitra.jpg" 
+                        alt="Ocelová konštrukcia" 
+                        class="portfolio-image"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3 class="text-lg font-bold mb-2">Ocelová konštrukcia</h3>
+                        <p class="text-sm mb-2">Priemyselná hala, Nitra</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs">2024</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-xs ml-1">5.0</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <span class="badge badge-outline text-xs">Priemyselné</span>
+                            <span class="badge badge-outline text-xs">Sivá</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="architektonické">
+                    <img 
+                        src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-premenovane/cierne-praskove-lakovanie-zabradlia-nitra.jpg" 
+                        alt="Moderné zábradlie" 
+                        class="portfolio-image"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3 class="text-lg font-bold mb-2">Moderné zábradlie</h3>
+                        <p class="text-sm mb-2">Rezidenčný komplex, Bratislava</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs">2024</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-xs ml-1">4.9</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <span class="badge badge-outline text-xs">Architektonické</span>
+                            <span class="badge badge-outline text-xs">Čierna</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="dizajnové">
+                    <img 
+                        src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/detail-praskoveho-lakovania-tyrkysovych-panelov-nitra.jpg" 
+                        alt="Dizajnové panely" 
+                        class="portfolio-image"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3 class="text-lg font-bold mb-2">Dizajnové panely</h3>
+                        <p class="text-sm mb-2">Obchodné centrum, Košice</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs">2023</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-xs ml-1">4.8</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <span class="badge badge-outline text-xs">Dizajnové</span>
+                            <span class="badge badge-outline text-xs">Tyrkysová</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="priemyselné">
+                    <img 
+                        src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/nalakovany-hlinikovy-disk-praskove-lakovanie-nitra.jpg" 
+                        alt="Hliníkové disky" 
+                        class="portfolio-image"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3 class="text-lg font-bold mb-2">Hliníkové disky</h3>
+                        <p class="text-sm mb-2">Automobilový priemysel</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs">2024</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-xs ml-1">5.0</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <span class="badge badge-outline text-xs">Priemyselné</span>
+                            <span class="badge badge-outline text-xs">Strieborná</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="architektonické">
+                    <img 
+                        src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-premenovane/sive-praskove-lakovanie-zabradlia-nitra.jpg" 
+                        alt="Sivé zábradlie" 
+                        class="portfolio-image"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3 class="text-lg font-bold mb-2">Sivé zábradlie</h3>
+                        <p class="text-sm mb-2">Verejná budova, Žilina</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs">2023</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-xs ml-1">4.7</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <span class="badge badge-outline text-xs">Architektonické</span>
+                            <span class="badge badge-outline text-xs">Sivá</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="dizajnové">
+                    <img 
+                        src="https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/aplikacia-modreho-praskoveho-nateru-na-plech-nitra.jpg" 
+                        alt="Modrý plech" 
+                        class="portfolio-image"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3 class="text-lg font-bold mb-2">Modrý plech</h3>
+                        <p class="text-sm mb-2">Umelecké dielo, Trenčín</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs">2024</span>
+                            <div class="rating">
+                                <svg class="star star-filled" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-xs ml-1">4.9</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-2">
+                            <span class="badge badge-outline text-xs">Dizajnové</span>
+                            <span class="badge badge-outline text-xs">Modrá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="card max-w-4xl mx-auto p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-gradient">Začnite svoj projekt s nami</h3>
+                    <p class="text-muted mb-6">
+                        Máte predstavu o svojom projekte? Kontaktujte nás pre nezáväznú konzultáciu a kalkuláciu.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="btn btn-primary px-8 py-3">
+                            Získať kalkuláciu
+                        </a>
+                        <button class="btn btn-outline px-8 py-3" onclick="showPortfolioModal()">
+                            Zobraziť všetky projekty
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20" id="contact">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gradient">
+                    Kontaktujte nás
+                </h2>
+                <p class="text-lg text-muted max-w-3xl mx-auto">
+                    Napíšte nám o svojom projekte a my vám pripravíme nezáväznú kalkuláciu do 24 hodín
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="contact-form">
+                    <h3 class="text-xl font-semibold mb-6">Pošlite nám správu</h3>
+                    
+                    <div id="success-message" class="success-message hidden">
+                        <strong>Ďakujeme!</strong> Vaša správa bola úspešne odoslaná. Kontaktujeme vás do 24 hodín.
+                    </div>
+
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Meno *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required 
+                                    class="form-input"
+                                    placeholder="Vaše meno"
+                                />
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    class="form-input"
+                                    placeholder="vas@email.sk"
+                                />
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium mb-2">Telefón</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form-input"
+                                    placeholder="+421 xxx xxx xxx"
+                                />
+                            </div>
+                            <div>
+                                <label for="projectType" class="block text-sm font-medium mb-2">Typ projektu</label>
+                                <select id="projectType" name="projectType" class="form-input form-select">
+                                    <option value="">Vyberte typ</option>
+                                    <option value="priemyselné">Priemyselné lakovanie</option>
+                                    <option value="architektonické">Architektonické prvky</option>
+                                    <option value="dizajnové">Dizajnové projekty</option>
+                                    <option value="zábradlia">Zábradlia a ploty</option>
+                                    <option value="nábytok">Nábytok a interiér</option>
+                                    <option value="iné">Iné</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Správa *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                required 
+                                rows="5"
+                                class="form-input form-textarea"
+                                placeholder="Opíšte nám váš projekt - typ materiálu, rozmery, požadované farby, termín dokončenia..."
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-full py-3" id="submit-btn">
+                            <span id="submit-text">Odoslať správu</span>
+                            <span id="submit-loading" class="hidden">
+                                <div class="spinner mr-2"></div>
+                                Odeosielame...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="card p-6 text-center">
+                            <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <h4 class="font-semibold mb-2">Telefón</h4>
+                            <p class="text-primary font-medium">+421 37 123 4567</p>
+                            <p class="text-sm text-muted">Po-Pi: 7:00-16:00</p>
+                        </div>
+                        
+                        <div class="card p-6 text-center">
+                            <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <h4 class="font-semibold mb-2">Email</h4>
+                            <p class="text-primary font-medium">info@billik.sk</p>
+                            <p class="text-sm text-muted">Odpoveď do 24h</p>
+                        </div>
+                        
+                        <div class="card p-6 text-center">
+                            <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <h4 class="font-semibold mb-2">Adresa</h4>
+                            <p class="text-primary font-medium">Priemyselná 123</p>
+                            <p class="text-sm text-muted">949 01 Nitra</p>
+                        </div>
+                        
+                        <div class="card p-6 text-center">
+                            <svg class="icon-xl text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <h4 class="font-semibold mb-2">Otváracie hodiny</h4>
+                            <p class="text-primary font-medium">Po-Pi: 7:00-16:00</p>
+                            <p class="text-sm text-muted">So: na dohovore</p>
+                        </div>
+                    </div>
+
+                    <div class="card p-6">
+                        <h4 class="text-xl font-semibold mb-4">Prečo si vybrať nás?</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold text-sm">10+</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Rokov skúseností</h5>
+                                    <p class="text-sm text-muted">S práskovým lakovaním od roku 2013</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold text-sm">99%</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Spokojnosť zákazníkov</h5>
+                                    <p class="text-sm text-muted">Na základe 500+ recenzií</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <span class="text-white font-bold text-sm">5r</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Záruka na práce</h5>
+                                    <p class="text-sm text-muted">Dlhodobá ochrana kvality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-6 bg-primary text-white">
+                        <h4 class="text-xl font-semibold mb-4">Urgentný projekt?</h4>
+                        <p class="mb-4 text-primary-foreground/90">
+                            Potrebujete riešiť projekt s krátkym termínom? Zavolajte nám priamo!
+                        </p>
+                        <a href="tel:+421371234567" class="btn bg-white text-primary hover:bg-gray-100 w-full">
+                            <svg class="icon mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            Zavolať teraz
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <div class="card p-6 text-center">
+                    <h4 class="text-xl font-semibold mb-4">Naša poloha</h4>
+                    <div class="bg-muted rounded-lg h-64 flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="icon-xl text-muted-foreground mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <p class="text-muted-foreground">Interaktívna mapa</p>
+                            <p class="text-sm text-muted-foreground">Priemyselná 123, 949 01 Nitra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-background-tertiary border-t">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gradient mb-4">Billik</h3>
+                    <p class="text-muted mb-4">
+                        Špičkové práškové lakovanie kovov v Nitre s 10+ rokmi skúseností.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-primary hover:scale-110 transition">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-primary hover:scale-110 transition">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-primary hover:scale-110 transition">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.751-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Služby</h4>
+                    <ul class="space-y-2 text-muted">
+                        <li><a href="#services" class="hover:text-primary transition">Priemyselné lakovanie</a></li>
+                        <li><a href="#services" class="hover:text-primary transition">Architektonické prvky</a></li>
+                        <li><a href="#services" class="hover:text-primary transition">Zábradlia a ploty</a></li>
+                        <li><a href="#services" class="hover:text-primary transition">Nábytok a interiér</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Informácie</h4>
+                    <ul class="space-y-2 text-muted">
+                        <li><a href="#process" class="hover:text-primary transition">Náš proces</a></li>
+                        <li><a href="#portfolio" class="hover:text-primary transition">Portfólio</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Cenník</a></li>
+                        <li><a href="#" class="hover:text-primary transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-muted">
+                        <li>Priemyselná 123</li>
+                        <li>949 01 Nitra</li>
+                        <li><a href="tel:+421371234567" class="hover:text-primary transition">+421 37 123 4567</a></li>
+                        <li><a href="mailto:info@billik.sk" class="hover:text-primary transition">info@billik.sk</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-border mt-8 pt-8 text-center text-muted">
+                <p>&copy; 2024 Billik. Všetky práva vyhradené.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Global state
+        let activeService = 0;
+        let isSubmitting = false;
+        let activeCategory = 'všetky';
+
+        // Counter animation
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const step = target / (duration / 16);
+            
+            function updateCounter() {
+                start += step;
+                if (start < target) {
+                    if (target === 998) {
+                        element.textContent = (start / 10).toFixed(1);
+                    } else {
+                        element.textContent = Math.floor(start);
+                    }
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    if (target === 998) {
+                        element.textContent = '99.8';
+                    } else {
+                        element.textContent = target;
+                    }
+                }
+            }
+            
+            updateCounter();
+        }
+
+        // Intersection Observer for animations
+        function setupAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        
+                        // Trigger counter animations
+                        const counters = entry.target.querySelectorAll('[data-count]');
+                        counters.forEach(counter => {
+                            const target = parseInt(counter.getAttribute('data-count'));
+                            animateCounter(counter, target);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            // Observe animated elements
+            document.querySelectorAll('.animate-fade-in-up, .animate-scale-in, .animate-slide-in-right').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        }
+
+        // Service card functionality
+        function setActiveService(index) {
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, i) => {
+                if (i === index) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+            activeService = index;
+        }
+
+        // Portfolio filtering
+        function filterPortfolio(category) {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            const filterButtons = document.querySelectorAll('.filter-button');
+            
+            // Update active button
+            filterButtons.forEach(btn => {
+                if (btn.getAttribute('data-category') === category) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            // Filter items
+            portfolioItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'všetky' || itemCategory === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+            
+            activeCategory = category;
+        }
+
+        // Contact form handling
+        function setupContactForm() {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const submitText = document.getElementById('submit-text');
+            const submitLoading = document.getElementById('submit-loading');
+            const successMessage = document.getElementById('success-message');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                if (isSubmitting) return;
+                
+                isSubmitting = true;
+                submitBtn.disabled = true;
+                submitText.classList.add('hidden');
+                submitLoading.classList.remove('hidden');
+                
+                // Simulate form submission
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Show success message
+                successMessage.classList.remove('hidden');
+                form.reset();
+                
+                // Reset button state
+                isSubmitting = false;
+                submitBtn.disabled = false;
+                submitText.classList.remove('hidden');
+                submitLoading.classList.add('hidden');
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            });
+        }
+
+        // Process section interactions
+        function showProcessVideo() {
+            alert('Video o našom procese sa otvorí v novom okne.');
+        }
+
+        function downloadBrochure() {
+            alert('Brožúra sa stiahne.');
+        }
+
+        // Portfolio modal
+        function showPortfolioModal() {
+            alert('Rozšírené portfólio sa otvorí v novom okne.');
+        }
+
+        // Smooth scrolling for navigation links
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Parallax effect for hero section
+        function setupParallax() {
+            let scrollY = 0;
+            
+            function updateParallax() {
+                scrollY = window.pageYOffset;
+                const heroSection = document.querySelector('.hero-section');
+                if (heroSection) {
+                    const parallaxElements = heroSection.querySelectorAll('.animate-float');
+                    parallaxElements.forEach(el => {
+                        const speed = 0.5;
+                        el.style.transform = `translateY(${scrollY * speed}px)`;
+                    });
+                }
+                requestAnimationFrame(updateParallax);
+            }
+            
+            updateParallax();
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            setupAnimations();
+            setupContactForm();
+            setupSmoothScrolling();
+            setupParallax();
+            
+            // Set initial active service
+            setActiveService(0);
+            
+            // Add scroll event for navbar (if you want to add a sticky navbar later)
+            window.addEventListener('scroll', () => {
+                // Future navbar scroll effects can go here
+            });
+        });
+
+        // Add some interactive hover effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add magnetic effect to buttons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.card, .portfolio-item');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+
+        // Add loading states and error handling
+        window.addEventListener('load', function() {
+            // Hide any loading spinners
+            document.querySelectorAll('.spinner').forEach(spinner => {
+                spinner.style.display = 'none';
+            });
+            
+            // Trigger entrance animations
+            setTimeout(() => {
+                document.querySelectorAll('.animate-fade-in-up').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
