@@ -20,7 +20,7 @@ const services = [
     icon: Factory,
     title: 'Priemyselné lakovanie',
     description: 'Špecializujeme sa na lakovanie ťažkých strojov, výrobných liniek a priemyselných zariadení s maximálnou odolnosťou.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/praskove-lakovanie-ocelovej-konstrukcie-v-peci-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/praskove-lakovanie-velkej-kovovej-konstrukcie-nitra.jpg',
     features: ['Vysoká odolnosť', 'Anti-korózia', 'Dlhá životnosť'],
     price: 'Od 15€/m²',
     rating: 4.9
@@ -30,7 +30,7 @@ const services = [
     icon: Home,
     title: 'Nábytok a interiéry',
     description: 'Obnova a lakovanie nábytku, kovových stolov, stoličiek a interiérových prvkov s dokonalým finišom.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/sive-praskove-lakovanie-stolovej-konstrukcie-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/nalakovany-hlinikovy-disk-praskove-lakovanie-nitra.jpg',
     features: ['Moderný dizajn', 'Hladký povrch', 'Farebné varianty'],
     price: 'Od 8€/m²',
     rating: 4.8
@@ -40,7 +40,7 @@ const services = [
     icon: Building,
     title: 'Architektonické prvky',
     description: 'Lakovanie zábradlí, brán, plotov a architektonických konštrukcií s dôrazom na estetiku a funkčnosť.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/biela-praskova-povrchova-uprava-zabradlia-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-premenovane/praskove-lakovanie-zabradlia-v-kabine-nitra.jpg',
     features: ['Vonkajšia odolnosť', 'UV ochrana', 'Estetický vzhľad'],
     price: 'Od 12€/m²',
     rating: 4.9
@@ -50,7 +50,7 @@ const services = [
     icon: Palette,
     title: 'Vlastné farby RAL',
     description: 'Široká paleta RAL farieb a možnosť vytvorenia vlastných farebných odtieňov podľa vašich požiadaviek.',
-    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/cervene-praskove-lakovanie-kovovych-dielov-nitra.jpg',
+    image: 'https://cdn.myshoptet.com/usr/www.billik.sk/user/documents/upload/lakovna-fotky-z-iphonu/detail-praskoveho-nateru-disku-nitra.jpg',
     features: ['500+ RAL farieb', 'Vlastné odtiene', 'Farebné vzorky'],
     price: 'Individuálne',
     rating: 5.0
